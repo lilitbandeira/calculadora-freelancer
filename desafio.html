@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop - Desafio</title>
+    <link rel="stylesheet" type="text/css" href="css/desafio.css" />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <img
+        class="nav-logo"
+        src="img/logotipo-reprograma.png"
+      />
+    </nav>
+    <header class="cabecalho">
+      <h1 class="titulo">Calculadora Freelancer</h1>
+    </header>
+
+    <main class="conteudo">
+      <section class="container">
+        <article class="valor-projeto">
+          <h3 class="valor">
+            <span id="resposta">R$ 0,00</span></h3>
+          <p class="legenda-menor">Valor total do projeto</p>
+        </article>
+        <article class="entrada-valores">
+          <div class="formulario">
+            <fieldset>
+              <legend>Quanto custa sua hora de trabalho?</legend>
+              <div class="inputs-form">
+                <label for="valor-hora">Valor Hora</label>
+                <input type="number" id="valor-hora" value="0" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Quantas horas trabalhará neste projeto?</legend>
+              <div class="inputs-form">
+                <label for="horas-projeto">Horas Projeto</label>
+                <input type="number" id="horas-projeto" value="0" />
+              </div>
+            </fieldset>
+            <button onclick="valorProjeto()">Calcular</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="rodape">Obrigada pelo dia de hoje, {reprograma} <a href="index.html">♥</a></footer>
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>

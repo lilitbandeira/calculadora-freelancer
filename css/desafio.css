@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Abel", "Lato", sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  margin: 0;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 1.5rem 0 0 0;
+}
+
+.nav-bar {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #2ed573;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.nav-logo {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+@media (min-width: 320px) {
+  .conteudo {
+    margin: 0 0 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .conteudo {
+    margin: 6rem auto 6rem auto;
+  }
+}
+@media (min-width: 992px) {
+  .conteudo {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .conteudo {
+    max-width: 60%;
+  }
+}
+
+.cabecalho {
+  position: relative;
+  text-align: center;
+  color: #3f3d56;
+  height: auto;
+  padding: 2rem 1rem;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background: url("../img/code.png") no-repeat center right;
+  background-attachment: scroll;
+  background-size: auto;
+  background-size: contain;
+  background-attachment: scroll;
+}
+
+.titulo {
+  margin: 0 10rem 0 0;
+  display: block;
+}
+
+@media (min-width: 320px) {
+  .cabecalho {
+    margin-top: 7rem;
+  }
+  .titulo {
+    margin: 0 10rem 0 0;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+  .titulo {
+    margin: 0 20rem 0 0;
+    font-size: 40px;
+  }
+}
+
+.valor-projeto {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+}
+.valor span {
+  font-size: 3.5rem;
+  color: #2ed573;
+  margin: 0 0 0.5rem 0;
+}
+.valor small {
+  font-size: 2rem;
+  color: #ecddf3;
+}
+.legenda-menor {
+  font-size: 1.2rem;
+  color: #3f3d56;
+}
+
+.entrada-valores {
+  padding: 3rem 1rem;
+  background-color: #7bed9f;
+  margin-bottom: 10px;
+}
+
+.formulario {
+  text-align: right;
+}
+
+.formulario fieldset {
+  padding: 0;
+  border: none;
+}
+
+.formulario fieldset:not(:first-child) {
+  margin: 1.5rem 0 0 0;
+}
+.formulario legend {
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+.inputs-form {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.inputs-form label {
+  text-align: right;
+  width: 60%;
+  padding: 0.7rem 0.5rem;
+  margin: 0;
+  background-color: #ecddf3;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.inputs-form input {
+  width: 40%;
+  padding: 0.7rem 0.5rem;
+  margin: 0;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.inputs-form p {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .valor-projeto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .entrada-valores,
+  .valor-projeto {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .entrada-valores {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .valor-projeto {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.rodape {
+  font-size: 18px;
+  letter-spacing: .3px;
+  font-style: italic;
+  text-align: center;
+  color: #20bf6b;
+  background-color: #f6f6f6;
+  padding: 1rem 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.rodape a {
+  color: tomato;
+  text-decoration: none;
+}
